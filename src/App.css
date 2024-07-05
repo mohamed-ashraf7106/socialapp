@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: #242526;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(99, 99, 195);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.active{
+  color: rgb(99, 99, 195);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+body {
+  background-color: #0b1019;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
+.navLink{
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 35px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:767px) {
+  .navLink{
+    font-size: 25px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.navLink a.active::after{
+content: "";
+position: absolute;
+bottom: -10px;
+width: calc(100% + 20px);
+left: -10px;
+height: 2px;
+background-color: rgb(99, 99, 195);
 }

@@ -1,0 +1,11 @@
+.activitybaricon{
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+.activeLike{
+  color: #6363c3;
+}
+.shared{
+  color: #6363c3;
+}
