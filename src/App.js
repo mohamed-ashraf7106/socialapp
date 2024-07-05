@@ -10,7 +10,7 @@ function App() {
       <div style={{ height: "70px" }}></div>
       <header className="bg-gray-900 w-full p-2 h-16 left-0 top-0 fixed flex justify-between z-50">
         <div>
-          <Link to="/">
+          <Link to="/socialapp">
             <img
               className="cursor-pointer w-12-"
               src={require("./assets/header/tailwind.png")}
@@ -21,7 +21,7 @@ function App() {
         <nav>
           <ul className="flex gap-3 h-full">
             <li className="navLink">
-              <NavLink to="/">
+              <NavLink to="/socialapp">
                 <i className="fa-solid fa-house"></i>
               </NavLink>
             </li>
@@ -43,7 +43,7 @@ function App() {
         </div>
       </header>
       <Routes>
-        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/socialapp" element={<HomePage />}></Route>
         <Route path="/shorts" element={<Shorts />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
       </Routes>
